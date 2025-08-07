@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Introduction about the HTML & CSS & JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="post-card">
+        <header class="post-header">
+            <h1>The Introduction about HTML & CSS & JavaScript</h1>
+            <h2>HTML & CSS & JavaScript 简介</h2>
+            <div class="post-meta">
+                <span>Author: Ray Scout </span> | <span>Date: August 7, 2025</span>
+            </div>
+        </header>
+
+        <main class="post-content">
+
+            <section class="section">
+                <h3>1. HTML (HyperText Markup Language)</h3>
+                <p>
+                    <strong>EN:</strong> HTML is the standard markup language for documents designed to be displayed in a web browser. It forms the structure of a web page, like the skeleton of a human body.
+                </p>
+                <p>
+                    <strong>中：</strong> HTML（超文本标记语言）是用于创建网页的标准标记语言。它构成了网页的结构，就像人体的骨架。
+                </p>
+                <pre><code>&lt;!-- Example of a simple HTML structure --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </section>
+
+            <section class="section">
+                <h3>2. CSS (Cascading Style Sheets)</h3>
+                <p>
+                    <strong>EN:</strong> CSS is the language we use to style an HTML document. It describes how HTML elements should be displayed, handling the layout, colors, and fonts. It's like the clothing and appearance of the body.
+                </p>
+                <p>
+                    <strong>中：</strong> CSS（层叠样式表）是我们用来设计HTML文档样式的语言。它描述了HTML元素应如何显示，负责处理布局、颜色和字体。它就像人体的衣服和外貌。
+                </p>
+                <pre><code>/* Example of CSS styling a paragraph */
+p {
+  color: #007aff; /* Sets the text color to Apple's blue */
+  font-size: 17px;
+  line-height: 1.65;
+}</code></pre>
+            </section>
+
+            <section class="section">
+                <h3>3. JavaScript (JS)</h3>
+                <p>
+                    <strong>EN:</strong> JavaScript is a programming language that enables you to create dynamically updating content, control multimedia, animate images, and much more. It makes web pages interactive, like making a button navigate to another site.
+                </p>
+                <p>
+                    <strong>中：</strong> JavaScript 是一门编程语言，能让你创建动态更新的内容、控制多媒体、制作图像动画等。它让网页变得可交互，比如让一个按钮跳转到另一个网站。
+                </p>
+
+                <div class="interactive-demo">
+                    <p><strong>Link Demo (链接演示)</strong></p>
+                    <button class="demo-button" id="myButton">Visit Ray Scout's Blog (访问Ray Scout的博客)</button>
+                    <p id="demo-text">Click the button above to go to http://rayscout.github.io/. (点击上方按钮即可跳转至 http://rayscout.github.io/。)</p>
+                </div>
+            </section>
+
+        </main>
+        
+        <footer class="post-footer">
+            &copy; 2025 - Inspired by Ray Scout's Blog.
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript: This script makes the button navigate to a new page.
+        // JavaScript：此脚本让演示按钮可以跳转到新页面。
+        const myButton = document.getElementById('myButton');
+
+        myButton.addEventListener('click', function() {
+            // When the button is clicked, redirect the browser to the specified URL.
+            // 当按钮被点击时，将浏览器重定向到指定的网址。
+            window.location.href = 'http://rayscout.github.io/';
+        });
+    </script>
+
+</body>
+</html>
